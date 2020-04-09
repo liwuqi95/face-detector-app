@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>52096120264-rfjgni6jbo2tafn1hbvtvqstpo1abscn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.52096120264-rfjgni6jbo2tafn1hbvtvqstpo1abscn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAPRfEWBZiR_IjnZ5XficnJbQpmIwDpaHo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>52096120264</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.lwq.facedetector</string>
+	<key>PROJECT_ID</key>
+	<string>face-detector-a797e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>face-detector-a797e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:52096120264:ios:5554f49c116ad9a4b4fcfd</string>
+	<key>DATABASE_URL</key>
+	<string>https://face-detector-a797e.firebaseio.com</string>
+</dict>
+</plist>
