@@ -24,7 +24,7 @@ var whoosh = new Sound('alarm.mp3', Sound.MAIN_BUNDLE, (error) => {
   }
 });
 
-
+// Get screen dimensions
 const screenHeight = Math.round(Dimensions.get('window').height);
 const screenWidth = Math.round(Dimensions.get('window').width);
 
@@ -67,25 +67,25 @@ export default class App extends React.Component {
           onFacesDetected={this.onFacesDetected}
           style={styles.camera}
           type={
-            // 前后摄像头
+            // camera front and back
             this.state.frontCamera
               ? RNCamera.Constants.Type.front
               : RNCamera.Constants.Type.back
           }
           flashMode={
-            // 是否开启闪光灯
+            // camera light
             this.state.openLight
               ? RNCamera.Constants.FlashMode.on
               : RNCamera.Constants.FlashMode.off
           }
-          // 权限提示
+          // permissions
           androidCameraPermissionOptions={{
             title: 'Permission to use camera',
             message: 'We need your permission to use your camera',
             buttonPositive: 'Ok',
             buttonNegative: 'Cancel',
           }}
-          // 权限提示
+          // permission text
           androidRecordAudioPermissionOptions={{
             title: 'Permission to use audio recording',
             message: 'We need your permission to use your audio',
@@ -127,6 +127,7 @@ export default class App extends React.Component {
     )
   }
 
+  // Face detection callback
   onFacesDetected = (faces) => {
 
     if (faces.faces.length > 0) {
@@ -166,6 +167,7 @@ export default class App extends React.Component {
 
   };
 
+  // Play sound for 4 seconds
   onPlaySound = () => {
     whoosh.setCurrentTime(29);
     whoosh.play();
